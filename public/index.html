@@ -79,9 +79,10 @@
         <div id="gdp-table">
 
         </div>
-        <iframe
-          src="https://data.worldbank.org/share/widget?end=2020&indicators=NE.EXP.GNFS.ZS&locations=IN&start=2020&view=map"
-          class="frameLink"></iframe>
+        <div class="frameContainer">
+          <iframe
+            src="https://data.worldbank.org/share/widget?end=2020&indicators=NE.EXP.GNFS.ZS&locations=IN&start=2020&view=map" class="frameLink"></iframe>
+        </div>
       </div>
     </div>
   </main>
@@ -100,13 +101,13 @@
     // example : (Student Api)
     console.log("this is the script file ");
     const countryCodeArr = ["USA", "CHN", 'JPN', "DEU", "GBR", "IND", "FRA", "ITA", "CAN", "KOR"];
-    
+
     //the table of gdp data 
     const gdpData = async function () {
       try {
         const res = await fetch("js/gdp_data_2020.json", { method: "GET" });
         const arrGdp = await res.json();
-       
+
         const top10Gdp = [];
 
         let i = 50;
