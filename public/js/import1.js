@@ -1,5 +1,4 @@
 $.getScript("js/generalMethod.js", function () {
-
   myFun = (element) => {
     console.log(element);
     console.log(element.value);
@@ -25,7 +24,7 @@ $.getScript("js/generalMethod.js", function () {
 
     if (id == "myChart0")
       // editChart(url0, id, parentId, chartType0, element.value);
-       bubbleChart(url0, id, parentId, chartType0, element.value);
+      bubbleChart(url0, id, parentId, chartType0, element.value);
 
     if (id == "myChart2")
       doughnutChart(url2, id, parentId, chartType2, element.value);

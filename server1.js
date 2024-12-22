@@ -6,7 +6,7 @@ const hbs = require("hbs");
 
 const app = express();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 const viewsPath = path.join(__dirname, "/public");
 console.log(viewsPath);
@@ -33,19 +33,19 @@ app.use(express.static(viewsPath));
 
 app.get("/", (req, res) => {
   // res.sendFile(__dirname + '/HomePage.html');
-//   res.render("index");
+  //   res.render("index");
 });
 
 app.get("/gdp", (req, res) => {
-//   res.render("gdp");
-    // res.end("this is the gdp");
-    res.sendFile(viewsPath + "/gdp.html");
+  //   res.render("gdp");
+  // res.end("this is the gdp");
+  res.sendFile(viewsPath + "/gdp.html");
 });
 
 app.get("/import", (req, res) => {
-//   res.render("import");
-    // res.end("this is the import");
-    res.sendFile(viewsPath + "/import.html");
+  //   res.render("import");
+  // res.end("this is the import");
+  res.sendFile(viewsPath + "/import.html");
 });
 
 app.get("/export", (req, res) => {
@@ -55,23 +55,23 @@ app.get("/export", (req, res) => {
 });
 
 app.get("/business", (req, res) => {
-//   res.render("business");
-    // res.end("this is the business");
-    res.sendFile(viewsPath + "/business.html");
+  //   res.render("business");
+  // res.end("this is the business");
+  res.sendFile(viewsPath + "/business.html");
 });
 
 app.get("/goverment", (req, res) => {
-//   res.render("government");
-    // res.end("this is the goverment");
-    res.sendFile(viewsPath + "/goverment.html");
+  //   res.render("government");
+  // res.end("this is the goverment");
+  res.sendFile(viewsPath + "/goverment.html");
 });
 
 app.get("/other", (req, res) => {
-//   res.render("other");
-    // res.end("this is the other incadicater ");
-    res.sendFile(viewsPath + "/other.html");
+  //   res.render("other");
+  // res.end("this is the other incadicater ");
+  res.sendFile(viewsPath + "/other.html");
 });
 
 app.listen(port, () => {
-  console.log("Server run   ning at port no " + port);
+  console.log("Server running at port no " + port);
 });

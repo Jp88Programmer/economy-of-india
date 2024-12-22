@@ -1,5 +1,4 @@
 $.getScript("js/generalMethod.js", function () {
-
   myFun = (element) => {
     console.log(element);
     console.log(element.value);

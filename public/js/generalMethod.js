@@ -193,7 +193,7 @@ const chart = (url, id, parentId, chartType, yearNo = 5) => {
 };
 //--------------------------------------------------------------------------------------------------------
 
-// barchart
+// barchart done
 const barChart = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -260,7 +260,7 @@ const barChart = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => console.log(err));
 };
 
-// bar chart with color
+// bar chart with color done
 const barChartWithColor = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -345,7 +345,7 @@ const barChartWithColor = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => console.log(err));
 };
 
-// bar chart with color
+// bar chart with color done
 const hBarChartWithColor = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -431,7 +431,7 @@ const hBarChartWithColor = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => console.log(err));
 };
 
-// bubble chart
+// bubble chart done
 const bubbleChart = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -544,6 +544,7 @@ const bubbleChart = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => err);
 };
 
+// bubble chart done
 const bubbleChartDiffBubble = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -831,7 +832,7 @@ const pieChart = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => console.log(err));
 };
 
-// Area chart with tension property
+// Area chart with tension property done
 const areaChart = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -918,7 +919,7 @@ const areaChart = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => console.log(err));
 };
 
-// Area chart not tension property
+// Area chart not tension property done
 const areaChartNotTension = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -1005,7 +1006,7 @@ const areaChartNotTension = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => console.log(err));
 };
 
-// line chart
+// line chart done
 const lineChart = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -1092,6 +1093,7 @@ const lineChart = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => console.log(err));
 };
 
+// horizontal line chart done
 const hLineChart = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -1127,7 +1129,7 @@ const hLineChart = (url, id, parentId, chartType, yearNo = 5) => {
         datasets: [
           {
             label: title,
-            fill:true,
+            fill: true,
             backgroundColor: [
               "rgba(255, 99, 132, 0.2)",
               "rgba(255, 159, 64, 0.2)",
@@ -1186,7 +1188,7 @@ const hLineChart = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => console.log(err));
 };
 
-// line chart with no tension property
+// line chart with no tension property done
 const lineChartNotension = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -1273,7 +1275,7 @@ const lineChartNotension = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => console.log(err));
 };
 
-// line chart with high tension
+// line chart with high tension done
 const lineChartWithHighTension = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -1361,7 +1363,7 @@ const lineChartWithHighTension = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => console.log(err));
 };
 
-//polar Area chart
+//polar Area chart done
 const polarAreaChart = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
@@ -1536,7 +1538,7 @@ const radarChart = (url, id, parentId, chartType, yearNo = 5) => {
     .catch((err) => console.log(err));
 };
 
-// scatter chart defult radius
+// scatter chart defult radius done
 const scatterChart = (url, id, parentId, chartType, yearNo = 5) => {
   const res = fetch(url)
     .then((r) => r.json())
